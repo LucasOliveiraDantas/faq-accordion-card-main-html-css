@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!--box icon-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--title-->
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="faq-container">
+      <div class="faq-img-mobile">
+        <img
+          class="img-woman"
+          src="images/illustration-woman-online-mobile.svg"
+          alt="image woman online"
+        />
+        <img
+          class="img-shadow"
+          src="images/bg-pattern-mobile.svg"
+          alt="shadow
+        of the image woman online"
+        />
+      </div>
+      <div class="faq-img-desktop">
+        <img
+          class="img-woman-desktop"
+          src="images/illustration-woman-online-desktop.svg"
+          alt="image woman online"
+        />
+        <img
+          class="img-shadow-desktop"
+          src="images/bg-pattern-desktop.svg"
+          alt="shadow of the image woman online"
+        />
+        <img
+          class="img-box-desktop"
+          src="images/illustration-box-desktop.svg"
+          alt="image box "
+        />
+      </div>
+      <div class="faq">
+        <h1 class="faq-title">FAQ</h1>
+        <details class="accordion accordion-1">
+          <summary class="question">
+            How many team members can I invite?
+            <i class="bx bx-chevron-down"></i>
+          </summary>
+          <p class="answer">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </p>
+        </details>
+        <details class="accordion accordion-2">
+          <summary class="question">
+            What is the maximum file upload size?
+            <i class="bx bx-chevron-down"></i>
+          </summary>
+          <p class="answer">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </p>
+        </details>
+        <details class="accordion accordion-3">
+          <summary class="question">
+            How do I reset my password?
+            <i class="bx bx-chevron-down"></i>
+          </summary>
+          <p class="answer">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </p>
+        </details>
+        <details class="accordion accordion-4">
+          <summary class="question">
+            Can I cancel my subscription?
+            <i class="bx bx-chevron-down"></i>
+          </summary>
+          <p class="answer">
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </p>
+        </details>
+        <details class="accordion accordion-5">
+          <summary class="question">
+            Do you provide additional support?
+            <i class="bx bx-chevron-down"></i>
+          </summary>
+          <p class="answer">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </p>
+        </details>
+      </div>
+    </div>
+
+    <div class="attribution" role="complementary">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noreferrer"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>

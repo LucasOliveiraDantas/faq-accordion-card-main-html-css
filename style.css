@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+:root {
+  --background-gradient: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  --color-arrow: hsl(14, 88%, 65%);
+  --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+  --Dividers: hsl(240, 5%, 91%);
+}
+body {
+  background-image: var(--background-gradient);
+  height: 100vh;
+}
+@media screen and (min-width: 360px) {
+  .faq-container {
+    background-color: #fff;
+    margin: 10rem 1.3rem 5rem 1.3rem;
+    border-radius: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  .faq-img-mobile {
+    position: absolute;
+    margin-top: -9rem;
+    margin-left: 1.5rem;
+  }
+  .img-shadow {
+    margin-top: -5rem;
+  }
+  .faq {
+    margin-top: 6rem;
+  }
+  .faq-title {
+    text-align: center;
+    padding-bottom: 0.5rem;
+  }
+  .accordion {
+    padding: 1rem 0rem;
+    border-bottom: 1px solid var(--Dividers);
+  }
+  .question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+  }
+  .bx {
+    font-size: 22px;
+    color: var(--color-arrow);
+  }
+  .answer {
+    font-size: 13px;
+    color: var(--Dark-grayish-blue);
+    margin-top: 0.5rem;
+  }
+
+  .accordion[open] .question {
+    color: var(--Very-dark-grayish-blue);
+    font-weight: 700;
+  }
+  .accordion[open] .bx {
+    transform: rotate(180deg);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .faq-container {
+    display: flex;
+    background-color: #fff;
+    margin: 10rem 15rem 5rem 15rem;
+    border-radius: 1.5rem;
+    padding: 2rem 1rem;
+    overflow: auto;
+  }
+  .faq-img-mobile {
+    display: none;
+  }
+  .faq-img-desktop {
+    width: 50%;
+    margin-left: -5rem;
+    margin-top: 4.8rem;
+  }
+  .img-woman-desktop {
+    width: 420px;
+    height: auto;
+    margin-top: -1rem;
+  }
+  .img-shadow-desktop {
+    width: 420px;
+    height: auto;
+    margin-top: -22rem;
+  }
+  .img-box-desktop {
+    position: absolute;
+    margin-top: -13rem;
+    margin-left: -28rem;
+  }
+  .faq {
+    width: 40%;
+    margin-left: 5rem;
+    margin-top: 2rem;
+  }
+  .faq-title {
+    text-align: start;
+  }
+  .answer {
+    margin-top: 1rem;
+  }
+}
